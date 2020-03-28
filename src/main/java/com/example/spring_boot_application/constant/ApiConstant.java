@@ -6,4 +6,5 @@ public interface ApiConstant {
 
     //~ Home API:
     String HOME_API = API + "/home";
+    String TEST_API = "/test";
 }
