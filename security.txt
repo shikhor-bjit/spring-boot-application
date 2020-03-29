@@ -1,0 +1,41 @@
+~ SQL Injection:
+    SQL injection is a type of injection attack. Injection attacks occur when maliciously crafted
+    inputs are submitted by an attacker, causing an application to perform an unintended action.
+    Because of the ubiquity of SQL databases, SQL injection is one of the most common types of
+    attack on the internet.
+
+~ Cross Site Scripting (CSS / XSS):
+    If your site allows users to add content, you need to be sure that attackers cannot inject
+    malicious JavaScript. One method of doing this is called cross-site scripting (XSS).
+
+~ Cross Site Request Forgery (CSRF / XSRF):
+    If an attacker can forge HTTP requests to your site, they may be able to trick your users into
+    triggering unintended actions.
+
+~ User Enumeration:
+    If an attacker can probe your site to test whether a username exists, it gives them a leg up
+    in trying to hack your users’ accounts.
+
+~ Session Fixation:
+    Session Fixation vulnerabilities can make your users liable to having their session hijacked.
+    A secure implementation of sessions on your site is key to protecting your users.
+
+    ~ Spring Security:
+        Code:
+        http.sessionManagement()
+          .sessionFixation().migrateSession()
+
+        By default, Spring Security has this protection enabled (“migrateSession“) – on
+        authentication a new HTTP Session is created, the old one is invalidated and the
+        attributes from the old session are copied over.
+
+~ Weak session IDs:
+    Weak session IDs can expose your users to having their session hijacked. If your session IDs are
+    picked from a small range of values, an attacker only needs to probe randomly chosen session IDs
+    until they find a match.
+
+~ Click Jacking
+    ClickJacking attacks trick web users into performing an action they did not intend, typically by
+    rendering an invisible page element on top of the action the user thinks they are performing.
+    ClickJacking won’t affect your site directly, but it could potentially affect your users. And only
+    you can protect them!
