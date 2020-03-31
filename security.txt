@@ -8,6 +8,11 @@
     If your site allows users to add content, you need to be sure that attackers cannot inject
     malicious JavaScript. One method of doing this is called cross-site scripting (XSS).
 
+~ Command Execution:
+    If an attacker can execute arbitrary code on your servers, your systems are almost certainly
+    going to be compromised. You need to take great care when designing how your web server interacts
+    with the underlying operating system.
+
 ~ Cross Site Request Forgery (CSRF / XSRF):
     If an attacker can forge HTTP requests to your site, they may be able to trick your users into
     triggering unintended actions.
