@@ -44,3 +44,7 @@
     rendering an invisible page element on top of the action the user thinks they are performing.
     ClickJacking won’t affect your site directly, but it could potentially affect your users. And only
     you can protect them!
+
+~ Denial of Service Attacks:
+    DOS is an attack used to deny legitimate users access to a resource such as accessing a website,
+    network, emails, etc. or making it extremely slow.
